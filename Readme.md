@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Андрей Кривонос](https://up.htmlacademy.ru/adaptive/21/user/1507453).
-* Наставник: `Неизвестно`.
+* Наставник: Анатолий Пазюк.
 
 ---
 
