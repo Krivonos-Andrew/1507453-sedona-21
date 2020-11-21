@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Форма</title>
+</head>
+
+<body class="page__body page">
+
+
+  <!-- Шапка сайта   -->
+
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/header/logotype-mobile.svg" width="102" height="84" alt="Логотип Седона">
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="photo.html">Фото и видео</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-list__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+          <div class="main-nav__list user-list"></div>
+        </div>
+      </nav>
+    </a>
+    <div class=""></div>
+  </header>
+
+  <!-- Основной контент -->
+  <form action="" method="post">
+
+    <div class="page-review">
+      <h2 class="page-reviev__title">Оставьте свой отзыв</h2>
+      <p class="page-reviev__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
+
+    <div class="name">
+      <h3 class="name__title">Представьтесь:</h3>
+      <lable class="name__input input__name">ИМЯ <sup>*</sup><input type="text" name="textfield" placeholder="ПЕТР" value="ПЕТР" required></lable>
+      <lable class="name__input input__surname">ФАМИЛИЯ<sup>*</sup><input type="text" name="textfield" placeholder="ИВАНОВ" value="ИВАНОВ" required></lable>
+      <lable class="name__input input__patronymic">ОТЧЕСТВО<sup>*</sup><input type="text" name="textfield" placeholder="АЛЕКСАНДРОВИЧ" value="АЛЕКСАНДРОВИЧ" required></lable>
+    </div>
+
+    <div class="contacts-form">
+      <h3 class="name__title contacts-form__title">Контактная информация:</h3>
+      <lable class="name__input input__phone"> Контактный телефон<sup>*</sup>:<input type="text" name="textfield" placeholder="Введите телефон" required></lable>
+      <input class="button button__phone" type="button" name="button__phone">
+      <lable class="name__input input__mail"> Электронная почта<sup>*</sup>:<input type="text" name="textfield" placeholder="Введите e-mail" required></lable>
+      <input class="button button__male" type="button" name="button__male">
+    </div>
+
+    <div class="impression">
+      <h3 class="name__title impression__title">ВАше Общее впечатление:</h3>
+      <label class="impression__searh"><input class="impression__radio-button" type="radio" name="radio" checked>Скорее положительное</label>
+      <label class="impression__searh"><input class="impression__radio-button" type="radio" name="radio">Скорее отрицательное</label>
+      <label class="impression__searh"><input class="impression__radio-button" type="radio" name="radio">Затрудняюсь ответить</label>
+    </div>
+
+    <div class="visited">
+      <h3 class="name__title visited__title">посещенные достопримечательности:</h3>
+      <label class="impression__searh visited__searsh"><input type="checkbox" name="checkbox" checked>Мост Дьявола</label>
+      <label class="impression__searh visited__searsh"><input type="checkbox" name="checkbox" checked>Гора-Колокол</label>
+      <label class="impression__searh visited__searsh"><input type="checkbox" name="checkbox" checked>Слайд-парк</label>
+      <label class="impression__searh visited__searsh"><input type="checkbox" name="checkbox">Красные скалы</label>
+    </div>
+
+    <div class="emotion">
+      <h3 class="name__title emotion__title">Опишите свои эмоции:</h3>
+      <textarea class="emotion__textarea" name="textarea" placeholder="Опишите подробно все свои восторги">Опишите подробно все свои восторги </textarea>
+    </div>
+  </form>
+  <div class="form__submit">
+    <a class="page-main__searsh_btn form__submit_btn" href="#" type="submit">ОТПРАВИТЬ ОТЗЫВ</a>
+  </div>
+
+  <!-- Подвал сайта -->
+
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <div class="page-footer__contacts contacts">
+        <b class="contacts__title">#visitSEDONA</b>
+      </div>
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy">Мы в Твиттер</a>
+          </li>
+          <li class="social__item"><a class="social__link social__link--facebok" href="https://www.facebook.com/htmlacademy">Мы в Фейсбуке</a>
+          </li>
+          <li class="social__item"><a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademy">Мы в Ютуб</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright"><b class="copyright__text"></b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"></a>
+      </div>
+    </div>
+
+  </footer>
+</body></html>
