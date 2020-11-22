@@ -43,48 +43,48 @@
   <form action="" method="post">
 
     <div class="page-review">
-      <h2 class="page-reviev__title">Оставьте свой отзыв</h2>
-      <p class="page-reviev__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <h2 class="page-review__title">Оставьте свой отзыв</h2>
+      <p class="page-review__subtitle">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </div>
 
     <div class="name">
       <h3 class="name__title">Представьтесь:</h3>
-      <lable class="name__input input__name">ИМЯ <sup>*</sup><input type="text" name="textfield" placeholder="ПЕТР" value="ПЕТР" required></lable>
-      <lable class="name__input input__surname">ФАМИЛИЯ<sup>*</sup><input type="text" name="textfield" placeholder="ИВАНОВ" value="ИВАНОВ" required></lable>
-      <lable class="name__input input__patronymic">ОТЧЕСТВО<sup>*</sup><input type="text" name="textfield" placeholder="АЛЕКСАНДРОВИЧ" value="АЛЕКСАНДРОВИЧ" required></lable>
+      <lable class="name__input name__input--name">ИМЯ <sup>*</sup><input type="text" name="textfield" placeholder="ПЕТР" value="ПЕТР" required></lable>
+      <lable class="name__input name__input--surname">ФАМИЛИЯ<sup>*</sup><input type="text" name="textfield" placeholder="ИВАНОВ" value="ИВАНОВ" required></lable>
+      <lable class="name__input name__input--patronymic">ОТЧЕСТВО<sup>*</sup><input type="text" name="textfield" placeholder="АЛЕКСАНДРОВИЧ" value="АЛЕКСАНДРОВИЧ" required></lable>
     </div>
 
     <div class="contacts-form">
-      <h3 class="name__title contacts-form__title">Контактная информация:</h3>
-      <lable class="name__input input__phone"> Контактный телефон<sup>*</sup>:<input type="text" name="textfield" placeholder="Введите телефон" required></lable>
+      <h3 class="contacts-form__title">Контактная информация:</h3>
+      <lable class="contacts-form__input contacts-form__input--phone"> Контактный телефон<sup>*</sup>:<input type="text" name="textfield" placeholder="Введите телефон" required></lable>
       <input class="button button__phone" type="button" name="button__phone">
-      <lable class="name__input input__mail"> Электронная почта<sup>*</sup>:<input type="text" name="textfield" placeholder="Введите e-mail" required></lable>
+      <lable class="contacts-form__input contacts-form__input--mail"> Электронная почта<sup>*</sup>:<input type="text" name="textfield" placeholder="Введите e-mail" required></lable>
       <input class="button button__male" type="button" name="button__male">
     </div>
 
     <div class="impression">
-      <h3 class="name__title impression__title">ВАше Общее впечатление:</h3>
-      <label class="impression__searh"><input class="impression__radio-button" type="radio" name="radio" checked>Скорее положительное</label>
-      <label class="impression__searh"><input class="impression__radio-button" type="radio" name="radio">Скорее отрицательное</label>
-      <label class="impression__searh"><input class="impression__radio-button" type="radio" name="radio">Затрудняюсь ответить</label>
+      <h3 class="impression__title">ВАше Общее впечатление:</h3>
+      <label class="impression__search"><input class="impression__radio-button" type="radio" name="radio" checked>Скорее положительное</label>
+      <label class="impression__search"><input class="impression__radio-button" type="radio" name="radio">Скорее отрицательное</label>
+      <label class="impression__search"><input class="impression__radio-button" type="radio" name="radio">Затрудняюсь ответить</label>
     </div>
 
     <div class="visited">
-      <h3 class="name__title visited__title">посещенные достопримечательности:</h3>
-      <label class="impression__searh visited__searsh"><input type="checkbox" name="checkbox" checked>Мост Дьявола</label>
-      <label class="impression__searh visited__searsh"><input type="checkbox" name="checkbox" checked>Гора-Колокол</label>
-      <label class="impression__searh visited__searsh"><input type="checkbox" name="checkbox" checked>Слайд-парк</label>
-      <label class="impression__searh visited__searsh"><input type="checkbox" name="checkbox">Красные скалы</label>
+      <h3 class="visited__title">посещенные достопримечательности:</h3>
+      <label class="visited__search"><input type="checkbox" name="checkbox" checked>Мост Дьявола</label>
+      <label class="visited__search"><input type="checkbox" name="checkbox" checked>Гора-Колокол</label>
+      <label class="visited__search"><input type="checkbox" name="checkbox" checked>Слайд-парк</label>
+      <label class="visited__search"><input type="checkbox" name="checkbox">Красные скалы</label>
     </div>
 
     <div class="emotion">
-      <h3 class="name__title emotion__title">Опишите свои эмоции:</h3>
+      <h3 class="emotion__title">Опишите свои эмоции:</h3>
       <textarea class="emotion__textarea" name="textarea" placeholder="Опишите подробно все свои восторги">Опишите подробно все свои восторги </textarea>
     </div>
-  </form>
-  <div class="form__submit">
-    <a class="page-main__searsh_btn form__submit_btn" href="#" type="submit">ОТПРАВИТЬ ОТЗЫВ</a>
-  </div>
+    </form>
+    <div class="submit submit__button">
+      <a class="submit__button_button" href="https://echo.htmlacademy.ru" type="submit">ОТПРАВИТЬ ОТЗЫВ</a>
+    </div>
 
   <!-- Подвал сайта -->
 
@@ -110,4 +110,6 @@
     </div>
 
   </footer>
-</body></html>
+</body>
+
+</html>
