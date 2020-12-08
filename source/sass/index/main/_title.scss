@@ -1,0 +1,21 @@
+.title {
+  width: inherit;
+  padding: 33px 28px 27px 28px;
+  @include blockCenter;
+  background-color: $white;
+
+  &__headline {
+    @include blockCenter;
+    @include font-sans-bold(18px, 700, 26px);
+  }
+
+  &__subtitle {
+    @include blockCenter;
+    @include font-sans(14px, 400, 26px);
+    color: $blackLight;
+  }
+
+  &__question {
+    @include font-sans-bold(21px, 700, 26px);
+  }
+}

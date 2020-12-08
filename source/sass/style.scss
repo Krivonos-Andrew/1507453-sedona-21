@@ -1,0 +1,52 @@
+ @import "./_vars";
+ @import "./_visually-hidden";
+ @import "./_fonts";
+ @import "./_mixins";
+ @import "./_menu-btn";
+ @import "./index/header/_header";
+ @import "./index/header/_menu";
+ // @import "./index/_page-main-banner";
+ @import "./index/main/_title";
+ @import "./index/main/_advantages";
+ @import "./index/main/_services";
+ @import "./_btn";
+ @import "./index/footer/_footer";
+
+ html {
+   box-sizing: border-box;
+ }
+
+ *,
+ *::after,
+ *::before {
+   box-sizing: inherit;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+   margin: 0;
+ }
+
+ a {
+   text-decoration: none;
+ }
+
+ ul,
+ li {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+ }
+
+ body {
+   width: 320px;
+   margin: 0 auto;
+   overflow-x: hidden;
+   text-align: center;
+   text-transform: uppercase;
+   background: red;
+ }

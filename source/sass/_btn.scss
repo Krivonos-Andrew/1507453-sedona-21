@@ -1,0 +1,22 @@
+.btn {
+  width: 87.5%;
+  margin: 0 auto;
+  padding: 15px;
+  display: block;
+  background-color: $blue;
+
+  &__text {
+    @include font-sans(21px, 700, 26px);
+    color: $white;
+  }
+}
+
+.page-main__searsh {
+  width: inherit;
+  padding-bottom: 50px;
+  background-color: $white;
+
+  &_btn {
+    @extend .btn;
+  }
+}

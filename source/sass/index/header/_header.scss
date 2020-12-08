@@ -1,0 +1,19 @@
+.container {
+  background-color: aqua;
+  padding: 17px 20px;
+}
+
+.inner {
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__logo {
+    margin-top: 17px;
+    margin-right: 7%;
+    position: absolute;
+  }
+
+  &__menu {}
+}
