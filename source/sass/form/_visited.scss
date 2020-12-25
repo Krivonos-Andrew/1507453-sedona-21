@@ -1,0 +1,48 @@
+.visited {
+  padding: 17px 0 39px 0;
+  position: relative;
+  background-color: #81b3d2;
+
+
+  &__title {
+    @include font-sans-bold(18px, 700, 26px);
+    padding-bottom: 36px;
+  }
+
+  &__searsh {
+    @include font-sans(18px, 700, 26px);
+    text-transform: none;
+    display: flex;
+    align-items: center;
+    padding-bottom: 54px;
+    padding-left: 79px;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
+
+
+    &_input {
+      position: absolute;
+      appearance: none;
+      cursor: pointer;
+
+      &:checked + .visited__searsh_check-box {
+        width: 50px;
+        height: 50px;
+        background-size: 23px 16px;
+        background-image: url("../img/form/tick.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &_check-box {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      margin-left: -75px;
+      background-color: $grayDark;
+    }
+  }
+}

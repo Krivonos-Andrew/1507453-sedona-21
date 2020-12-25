@@ -2,6 +2,7 @@
   font-family: "PT sans Bold";
   src: url("../fonts/ptsansbold.woff") format("woff2"),
     url("../fonts/ptsansbold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -9,5 +10,6 @@
   font-family: "PT sans";
   src: url("../fonts/ptsans.woff") format("woff2"),
     url("../fonts/ptsans.woff") format("woff");
+  font-weight: 400;
   font-style: normal;
 }

@@ -1,13 +1,14 @@
 .advantages {
-  @include blockCenter;
+  @include center;
 
   &__item {
-    @include blockCenter;
+    @include center;
     background-color: aqua;
 
     &_blue {
       padding: 40px 15px 35px 12px;
-      @include blockCenter;
+
+      @include center;
       background-color: $blue;
       color: $white;
     }
@@ -17,17 +18,16 @@
     }
 
     &_subtitle {
-      @include blockCenter;
+      @include center;
       @include font-sans(14px, 400, 21px);
-
     }
 
     &_gray {
       padding: 25px;
-      @include blockCenter;
+
+      @include center;
       background-color: $gray;
       color: $blackLight;
-
     }
 
     &_image {

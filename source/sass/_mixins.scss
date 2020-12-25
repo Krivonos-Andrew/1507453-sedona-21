@@ -1,4 +1,4 @@
-@mixin blockCenter {
+@mixin center {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -7,7 +7,7 @@
 }
 
 @mixin font-sans($size: false, $weight: false, $lh: false) {
-  font-family: "PT sans", Helvetica, Arial, sans-serif;
+  font-family: "PT sans", "Helvetica", "Arial", sans-serif;
 
   @if $size {
     font-size: $size;
@@ -23,7 +23,7 @@
 }
 
 @mixin font-sans-bold($size: false, $weight: false, $lh: false) {
-  font-family: "PT sans Bold", Helvetica, Arial, sans-serif;
+  font-family: "PT sans Bold", "Helvetica", "Arial", sans-serif;
 
   @if $size {
     font-size: $size;
@@ -36,4 +36,10 @@
   @if $lh {
     line-height: $lh;
   }
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: "") {
+  content: $content;
+  display: $display;
+  position: $pos;
 }

@@ -1,0 +1,26 @@
+.emotion {
+  margin-top: 20px;
+
+
+  background-color: green;
+
+  &__title {
+    margin-bottom: 15px;
+    @include font-sans-bold(18px, 700, 26px);
+
+
+    background-color: inherit;
+  }
+
+  &__textarea {
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 160px;
+    @include font-sans-bold(18px, 700, 26px);
+    text-transform: none;
+    border: none;
+    background-color: tomato;
+    padding-left: 20px;
+    padding-top: 15px;
+  }
+}

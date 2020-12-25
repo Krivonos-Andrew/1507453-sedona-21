@@ -1,0 +1,62 @@
+.name {
+  margin: 0;
+  border-top: 1px solid red;
+
+}
+
+.title-name {
+
+
+  padding-top: 20px;
+
+
+  &__headline {
+    width: inherit;
+    margin-bottom: 20px;
+
+    @include font-sans-bold(18px, 700, 26px);
+  }
+
+  &__input {
+
+    background-color: blueviolet;
+  }
+}
+
+.name-date {
+  background-color: #deb887;
+  margin-top: 15px;
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+
+  &__name {
+    background-color: darkgoldenrod;
+    padding-bottom: 20px;
+  }
+}
+
+
+.name-label {
+  display: flex;
+  align-items: center;
+
+  &__text {
+    padding-right: 1rem;
+
+    @include font-sans(14px, 400, 26px);
+  }
+
+
+  &__input {
+    min-width: 150px;
+    padding-top: 5px;
+    padding-left: 21px;
+    height: 58px;
+    flex-grow: 1;
+
+    @include font-sans-bold(18px, 700, 26px);
+  }
+}
+
+

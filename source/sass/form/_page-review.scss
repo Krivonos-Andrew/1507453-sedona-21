@@ -1,0 +1,14 @@
+.page-review {
+
+  background-color: $accent;
+
+  &__title {
+
+    @include font-sans-bold(18px, 700, 26px);
+  }
+
+  &__subtitle {
+    padding-top: 14px;
+    @include font-sans(14px, 400, 24px);
+  }
+}
