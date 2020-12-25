@@ -3,13 +3,13 @@
   margin: 0;
   padding: 26px 20px 0 20px;
   display: flex;
-  background: green;
+  background: $white;
 
   &_images {
     min-width: 40px;
     margin-right: 9px;
     padding: 0;
-    background: orange;
+    background: $white;
   }
 
   &_text {

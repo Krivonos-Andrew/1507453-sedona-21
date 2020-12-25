@@ -5,9 +5,6 @@
     width: 100%;
     margin: 0;
     padding: 0 40px;
-
-    background: aqua;
-
     @include center;
   }
 
@@ -16,7 +13,6 @@
     display: flex;
     justify-content: center;
     padding: 75px 0 35px 0;
-
     @include font-sans-bold(18px, 700, 26px);
   }
 
@@ -25,7 +21,7 @@
   }
 
   &__copyright {
-    background: orange;
+
     width: min-content;
     height: min-content;
     margin: 0 auto;
@@ -38,8 +34,6 @@
 
 .social {
   width: 100%;
-
-
 
   &__list {
     width: 160px;
@@ -69,7 +63,6 @@
     margin: 0;
     padding-bottom: 5px;
     padding-right: 15px;
-
     @include font-sans(14px, 400, 26px);
   }
 
