@@ -1,47 +1,58 @@
-.card {
-  padding: 20px;
+.card
+{
+    padding: 20px;
 
 
-  &__foto {
-    &_img {}
-  }
 
-  &__title {
-    display: flex;
 
-    padding-top: 5px;
+    &__title
+    {
+        display: flex;
 
-    &_headline {
-      @include font-sans (14px, 700, 24px);
+        padding-top: 5px;
+
+        &_headline
+        {
+            @include font-sans (14px, 700, 24px);
+        }
     }
-  }
 
-  &__autor {
+    &__autor
+    {
+        display: flex;
 
-    margin: 0;
-    display: flex;
-    background-color: aqua;
+        margin: 0;
 
-    &_name {
-      margin: 0;
-      @include font-sans (14px, 400, 24px);
-      text-transform: none;
+        background-color: aqua;
+
+        &_name
+        {
+            margin: 0;
+
+            text-transform: none;
+
+            @include font-sans (14px, 400, 24px);
+        }
     }
-  }
 
-  &__like {
-    background-color: tomato;
-    display: flex;
+    &__like
+    {
+        display: flex;
 
-    margin-top: 13px;
+        margin-top: 13px;
 
-    &_img {}
+        background-color: tomato;
 
-    &_sum {
-      margin: 0;
-      padding: 0 0 0 15px;
-      @include font-sans (14px, 700, 24px);
-      text-align: end;
+
+
+        &_sum
+        {
+            margin: 0;
+            padding: 0 0 0 15px;
+
+            text-align: end;
+
+            @include font-sans (14px, 700, 24px);
+        }
     }
-  }
 }
