@@ -1,0 +1,47 @@
+.card {
+  padding: 20px;
+
+
+  &__foto {
+    &_img {}
+  }
+
+  &__title {
+    display: flex;
+
+    padding-top: 5px;
+
+    &_headline {
+      @include font-sans (14px, 700, 24px);
+    }
+  }
+
+  &__autor {
+
+    margin: 0;
+    display: flex;
+    background-color: aqua;
+
+    &_name {
+      margin: 0;
+      @include font-sans (14px, 400, 24px);
+      text-transform: none;
+    }
+  }
+
+  &__like {
+    background-color: tomato;
+    display: flex;
+
+    margin-top: 13px;
+
+    &_img {}
+
+    &_sum {
+      margin: 0;
+      padding: 0 0 0 15px;
+      @include font-sans (14px, 700, 24px);
+      text-align: end;
+    }
+  }
+}

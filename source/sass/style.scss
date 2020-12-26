@@ -19,6 +19,11 @@
 @import "./form/_visited";
 @import "./form/_emotion";
 @import "./form/_form-submit";
+@import "./catalog/_banner";
+@import "./catalog/_title.scss";
+@import "./catalog/_card.scss";
+@import "./catalog/_question.scss";
+@import "./catalog/_video.scss";
 
 html {
   box-sizing: border-box;
