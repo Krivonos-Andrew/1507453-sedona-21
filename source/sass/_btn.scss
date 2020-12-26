@@ -1,22 +1,30 @@
-.btn {
-  width: 87.5%;
-  margin: 0 auto;
-  padding: 1rem;
-  display: block;
-  background-color: $blue;
+.btn
+{
+    display: block;
 
-  &__text {
-    @include font-sans(21px, 700, 26px);
-    color: $white;
-  }
+    width: 87.5%;
+    margin: 0 auto;
+    padding: 1rem;
+
+    background-color: $blue;
+
+    &__text
+    {
+        color: $white;
+
+        @include font-sans(21px, 700, 26px);
+    }
 }
 
-.page-main__searsh {
-  width: inherit;
-  padding-bottom: 50px;
-  background-color: $white;
+.page-main__searsh
+{
+    width: inherit;
+    padding-bottom: 50px;
 
-  &_btn {
-    @extend .btn;
-  }
+    background-color: $white;
+
+    &_btn
+    {
+        @extend .btn;
+    }
 }
