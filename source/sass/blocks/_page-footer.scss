@@ -1,0 +1,25 @@
+.page-footer {
+  padding: 17px 0 0 0;
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px 8px 60px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 20px 120px 8px 120px;
+  }
+
+
+  .page-footer__item {
+    padding-bottom: 11px;
+
+
+    @media (min-width: $tablet) {
+      padding: 0;
+    }
+  }
+}

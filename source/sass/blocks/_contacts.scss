@@ -1,0 +1,25 @@
+.contacts {
+  @media (min-width: $tablet) {
+    width: 33%;
+    text-align: start;
+  }
+
+  // .contacts__title
+}
+
+.contacts__title {
+  @include font-sans-bold(21px, 700, 26px);
+  margin: 0;
+  padding-top: 17px;
+  padding-bottom: 22px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding-bottom: 5px;
+  }
+
+  @media (min-width: $desktop) {
+    margin: 0;
+    padding-bottom: 6px;
+  }
+}

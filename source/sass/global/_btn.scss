@@ -1,0 +1,27 @@
+.btn {
+  width: 100%;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include font-sans-bold (21px, 700, 26px);
+  background-color: $blue;
+  color: $white;
+
+}
+
+.btn:hover {
+  background-color: $blueHover;
+  color: $white;
+}
+
+.btn:active {
+  background-color: $blueActive;
+  color: rgba($color: $white, $alpha: 0.3);
+
+}
+
+.btn:disabled {
+  background-color: $border;
+}

@@ -1,0 +1,60 @@
+.banner-form {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 158px;
+  overflow: hidden;
+  background-color: $banner;
+
+  @media (min-width: $tablet) {
+    height: 290px;
+  }
+
+  @media (min-width: $desktop) {
+    height: 301px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+
+    width: 229px;
+    height: 39px;
+
+    background-image: url("../img/sedona-desktop.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      top: 45%;
+      margin-top: 5px;
+      width: 457px;
+      height: 78px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 45%;
+    }
+  }
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    height: 57px;
+
+    background-image: url("../img/intro-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+
+    @media (min-width: $tablet) {
+
+      bottom: -1px;
+    }
+  }
+}

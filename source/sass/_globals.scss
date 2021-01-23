@@ -1,0 +1,52 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.page-body {
+  min-width: 320px;
+  max-width: 1280px;
+  margin: 0 auto;
+  overflow-x: hidden;
+
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.container {
+  width: $phone;
+  margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: $tablet;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+  object-position: center;
+}
