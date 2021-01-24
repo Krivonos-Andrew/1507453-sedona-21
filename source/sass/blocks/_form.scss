@@ -335,7 +335,7 @@
   cursor: pointer;
 }
 
-.form__impression-input+.form__impression-radio::before {
+.form__impression-input + .form__impression-radio::before {
   content: "";
   position: absolute;
   top: 0;
@@ -348,15 +348,15 @@
   border-radius: 50%;
 }
 
-.form__impression-input:hover+.form__impression-radio::before {
+.form__impression-input:hover + .form__impression-radio::before {
   background-color: $border;
 
-  .form__impression-input:active+.form__impression-radio::before {
+  .form__impression-input:active + .form__impression-radio::before {
     background-color: $radioActive;
   }
 }
 
-.form__impression-input+.form__impression-radio::after {
+.form__impression-input + .form__impression-radio::after {
   content: "";
   position: absolute;
   top: 16px;
@@ -369,15 +369,15 @@
   border-radius: 50%;
 }
 
-.form__impression-input:active+.form__impression-radio::after {
+.form__impression-input:active + .form__impression-radio::after {
   background-color: rgba($color: $blackLight, $alpha: 0.3);
 }
 
-.form__impression-input:not(:checked)+.form__impression-radio::after {
+.form__impression-input:not(:checked) + .form__impression-radio::after {
   opacity: 0;
 }
 
-.form__impression-input:checked+.form__impression-radio::after {
+.form__impression-input:checked + .form__impression-radio::after {
   opacity: 1;
 }
 
@@ -493,7 +493,7 @@
   }
 }
 
-.form__visited-input+.form__visited-check::before {
+.form__visited-input + .form__visited-check::before {
   content: "";
   position: absolute;
   top: 0;
@@ -505,15 +505,15 @@
   background-color: $grayDark;
 }
 
-.form__visited-input:hover+.form__visited-check::before {
+.form__visited-input:hover + .form__visited-check::before {
   background-color: $border;
 }
 
-.form__visited-input:active+.form__visited-check::before {
+.form__visited-input:active + .form__visited-check::before {
   background-color: $radioActive;
 }
 
-.form__visited-input+.form__visited-check::after {
+.form__visited-input + .form__visited-check::after {
   content: "";
   position: absolute;
   top: 16px;
@@ -527,15 +527,15 @@
   background-position: center;
 }
 
-.form__visited-input:active+.form__visited-check::after {
+.form__visited-input:active + .form__visited-check::after {
   background-image: url("../img/tick-active.svg");
 }
 
-.form__visited-input:not(:checked)+.form__visited-check::after {
+.form__visited-input:not(:checked) + .form__visited-check::after {
   opacity: 0;
 }
 
-.form__visited-input:checked+.form__visited-check::after {
+.form__visited-input:checked + .form__visited-check::after {
   opacity: 1;
 }
 
