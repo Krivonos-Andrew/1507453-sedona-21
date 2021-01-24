@@ -13,6 +13,13 @@
   font-family: "PT sans", "Helvetica", "Arial", sans-serif;
 }
 
+@mixin font-sans-bold($size, $weight, $lh) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lh;
+  font-family: "PT sans Bold", "Helvetica", "Arial", sans-serif;
+}
+
 @mixin pseudo($display: block, $pos: absolute, $content: "") {
   content: $content;
   position: $pos;

@@ -10,10 +10,10 @@
   }
 
   h2 {
-    @include font-sans(21px, 700, 26px);
+    @include font-sans-bold(21px, 700, 26px);
 
     @media (min-width: $tablet) {
-      @include font-sans(30px, 700, 26px);
+      @include font-sans-bold(30px, 700, 26px);
     }
 
     @media (min-width: $tablet) {

@@ -51,12 +51,12 @@
 }
 
 .advantages__item h3 {
-  @include font-sans(18px, 700, 26px);
+  @include font-sans-bold(18px, 700, 26px);
 
   margin: 0;
 
   @media (min-width: $tablet) {
-    @include font-sans(21px, 700, 26px);
+    @include font-sans-bold(21px, 700, 26px);
   }
 }
 
