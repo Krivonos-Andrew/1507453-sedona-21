@@ -1,0 +1,62 @@
+.page-main {}
+
+.page-main__banner {
+  position: relative;
+
+  height: 389px;
+  background-color: $banner;
+
+  @media (min-width: $tablet) {
+    height: 518px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 282px;
+    height: 214px;
+
+    background-image: url("../img/text-index.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate(-50%, -50%);
+
+
+    @media (min-width: $tablet) {
+      top: 48%;
+
+      width: 461px;
+      height: 350px;
+    }
+
+    @media (min-width: $desktop) {
+      top: 49%;
+
+      width: 461px;
+      height: 350px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    height: 57px;
+
+    background-image: url("../img/intro-triangle.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+
+    @media (min-width: $tablet) {
+
+      bottom: -1px;
+    }
+  }
+}

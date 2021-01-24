@@ -1,0 +1,13 @@
+.map iframe {
+  width: $phone;
+  height: 350px;
+
+  @media (min-width:$tablet) {
+    min-width: $tablet;
+
+  }
+
+  @media (min-width:$desktop) {
+    min-width: $desktop;
+  }
+}

@@ -1,0 +1,65 @@
+.page-form {
+  padding-top: 18px;
+
+
+}
+
+.page-form__review {
+  padding-bottom: 17px;
+
+  text-align: center;
+
+  border-bottom: 1px solid $border;
+
+  @media (min-width: $tablet) {
+    padding-bottom: 88px;
+
+    border: none;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 59px;
+  }
+
+
+}
+
+.page-form__title {
+  @include font-sans-bold(18px, 700, 26px);
+
+  padding-bottom: 10px;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding-top: 44px;
+
+    font-size: 30px;
+  }
+
+  @media (min-width: $desktop) {
+
+    padding-top: 95px;
+
+
+  }
+}
+
+
+
+.page-form__subtitle {
+  @include font-sans(14px, 400, 24px);
+
+  width: 100%;
+  margin: 0 auto;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    width: 440px;
+    margin: 0 auto;
+    padding-top: 22px;
+    padding-bottom: 0;
+
+  }
+}

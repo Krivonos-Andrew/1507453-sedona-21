@@ -1,0 +1,54 @@
+.title {
+  position: relative;
+
+  padding: 14px 30px 20px 30px;
+
+  background-color: $white;
+
+  @media (min-width: $tablet) {
+    padding: 23px 110px 38px 110px;
+  }
+
+  @media (min-width: $desktop) {
+    padding: 35px 350px 27px 350px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -14px;
+    left: 0;
+    z-index: 1;
+
+    height: 37px;
+
+    background-image: url("../img/white-trangle-bottom-index.svg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
+  }
+}
+
+
+.title__headline {
+  @include font-sans-bold(18px, 700, 26px);
+
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet) {
+    @include font-sans-bold(21px, 700, 26px);
+
+    padding-bottom: 11px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-bottom: 9px;
+  }
+}
+
+.title__subtitle {
+  @include font-sans(14px, 400, 26px);
+}
