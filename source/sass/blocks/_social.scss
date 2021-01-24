@@ -7,16 +7,13 @@
 
   @media (min-width: $tablet) {
     width: 33%;
-
     margin-right: 24px;
     justify-content: start;
   }
 
   @media (min-width: $desktop) {
-
     margin-right: 20px;
   }
-
 }
 
 .social__link-twitter:active svg path {
@@ -39,18 +36,17 @@
   width: 46px;
   height: 48px;
   margin-right: 6px;
-
   background-color: $blue;
 
   &:last-child {
     margin-right: 0;
   }
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     margin-top: 10px;
   }
 
-  @media (min-width:$desktop) {
+  @media (min-width: $desktop) {
     margin-top: 15px;
   }
 }

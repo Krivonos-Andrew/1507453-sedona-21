@@ -12,7 +12,6 @@
   }
 }
 
-
 .form__item {
   padding: 20px 20px 26px;
 
@@ -31,7 +30,7 @@
 }
 
 .form__item h3 {
-  @include font-sans-bold(18px, 700, 26px);
+  @include font-sans(18px, 700, 26px);
 
   margin: 0;
 
@@ -41,11 +40,8 @@
   }
 }
 
-
-
 .form__item-name {
   @media (min-width: $tablet) {
-
     width: 384px;
     padding: 0 60px 0 56px;
 
@@ -55,7 +51,6 @@
     @media (min-width: $desktop) {
       width: 540px;
       padding-left: 79px;
-
     }
   }
 }
@@ -63,30 +58,20 @@
 .form__item-name h3 {
   @media (min-width: $tablet) {
     margin: 0;
-
     padding-bottom: 52px;
 
     text-align: left;
   }
-
-  @media (min-width: $desktop) {}
 }
-
-
 
 .form__name {
   padding-top: 18px;
 
   @media (min-width: $tablet) {
-
     padding-top: 0;
     padding-bottom: 0;
   }
-
-  @media (min-width: $desktop) {}
 }
-
-
 
 .form__name-item {
   display: flex;
@@ -98,15 +83,12 @@
   }
 
   &:last-child label {
-    padding-top: 5px;
     margin-right: 20px;
-
+    padding-top: 5px;
   }
 
   &:last-child input {
     padding-left: 18px;
-
-
   }
 
   &:last-child {
@@ -114,10 +96,8 @@
   }
 }
 
-
 .form__label {
   @include font-sans(14px, 400, 24px);
-
 
   text-align: left;
   text-transform: uppercase;
@@ -131,19 +111,14 @@
   }
 }
 
-
 .form__name-input {
-
   @media (min-width: $tablet) {
     padding-top: 7px;
   }
 }
 
-
-
 .form__input {
-  @include font-sans-bold(18px, 700, 26px);
-
+  @include font-sans(18px, 700, 26px);
 
   width: 100%;
   height: 58px;
@@ -164,7 +139,6 @@
   background-color: $white;
   border: 4px solid $border;
 }
-
 
 .form__item-contacts {
   padding-bottom: 20px;
@@ -192,36 +166,37 @@
 
 .form__contacts-title {
   @media (min-width: $tablet) {
-
-    width: inherit;
     position: relative;
+
     display: flex;
     justify-content: center;
+    width: inherit;
     padding-bottom: 25px;
   }
-
 }
 
 .form__contacts-title::before {
   @media (min-width: $tablet) {
     content: "";
+    position: absolute;
+    top: 10px;
+
     display: block;
     width: 100%;
     height: 1px;
-    background-color: $line;
-    position: absolute;
-    top: 10px;
-  }
 
+    background-color: $line;
+  }
 }
 
 .form__contacts-title h3 {
   @media (min-width: $tablet) {
     position: absolute;
+
     width: 400px;
+
     background-color: $white;
   }
-
 }
 
 .form__contacts .form__input {
@@ -229,7 +204,6 @@
   padding-right: 65px;
   padding-left: 21px;
 }
-
 
 .form__contacts-item {
   position: relative;
@@ -259,9 +233,9 @@
   }
 
   @media (min-width: $desktop) {
+    margin-bottom: 0;
     padding-right: 14px;
     padding-left: 0;
-    margin-bottom: 0;
   }
 
   &::after {
@@ -277,7 +251,6 @@
     background-image: url("../img/phone.svg");
     background-repeat: no-repeat;
     background-position: center;
-
   }
 }
 
@@ -299,15 +272,11 @@
   }
 }
 
-
-
 .form__desktop {
   @media (min-width: $desktop) {
     display: none;
   }
 }
-
-
 
 .form__contacts-input {
   @media (min-width: $desktop) {
@@ -316,18 +285,12 @@
 }
 
 .form__item-impression {
-
   padding-bottom: 15px;
 
-
-
   @media (min-width: $tablet) {
-
     order: -1;
     width: 384px;
     padding: 0 0 0 60px;
-
-
   }
 
   @media (min-width: $desktop) {
@@ -337,15 +300,12 @@
 }
 
 .form__item-impression h3 {
-
   padding-bottom: 21px;
 
   @media (min-width: $tablet) {
     padding-bottom: 58px;
 
     text-align: left;
-
-
   }
 
   @media (min-width: $desktop) {
@@ -353,10 +313,7 @@
   }
 }
 
-
-
 .form__impression-item {
-
   margin-bottom: 18px;
 
   text-align: left;
@@ -378,7 +335,7 @@
   cursor: pointer;
 }
 
-.form__impression-input+.form__impression-radio::before {
+.form__impression-input + .form__impression-radio::before {
   content: "";
   position: absolute;
   top: 0;
@@ -388,19 +345,18 @@
   height: 52px;
 
   background-color: $grayDark;
-
   border-radius: 50%;
 }
 
-.form__impression-input:hover+.form__impression-radio::before {
+.form__impression-input:hover + .form__impression-radio::before {
   background-color: $border;
 
-  .form__impression-input:active+.form__impression-radio::before {
+  .form__impression-input:active + .form__impression-radio::before {
     background-color: $radioActive;
   }
 }
 
-.form__impression-input+.form__impression-radio::after {
+.form__impression-input + .form__impression-radio::after {
   content: "";
   position: absolute;
   top: 16px;
@@ -413,21 +369,20 @@
   border-radius: 50%;
 }
 
-.form__impression-input:active+.form__impression-radio::after {
+.form__impression-input:active + .form__impression-radio::after {
   background-color: rgba($color: $blackLight, $alpha: 0.3);
 }
 
-.form__impression-input:not(:checked)+.form__impression-radio::after {
+.form__impression-input:not(:checked) + .form__impression-radio::after {
   opacity: 0;
 }
 
-.form__impression-input:checked+.form__impression-radio::after {
+.form__impression-input:checked + .form__impression-radio::after {
   opacity: 1;
 }
 
-
 .form__custom-element {
-  @include font-sans-bold(18px, 700, 26px);
+  @include font-sans(18px, 700, 26px);
 
   position: relative;
 
@@ -445,61 +400,56 @@
   }
 }
 
-
 .form__item-visited {
   padding-top: 15px;
   padding-bottom: 28px;
 
   @media (min-width: $tablet) {
-
     padding-top: 12px;
-
-
   }
 
   @media (min-width: $desktop) {
     width: 100%;
-    padding-bottom: 59px;
     margin-left: 3px;
+    padding-bottom: 59px;
   }
 }
 
 .form__visited-title {
   @media (min-width: $tablet) {
-
-    padding-bottom: 95px;
     position: relative;
+
     display: flex;
     justify-content: center;
+    padding-bottom: 95px;
   }
-
 }
 
 .form__visited-title::before {
   @media (min-width: $tablet) {
     content: "";
+    position: absolute;
+    top: 26px;
+
     display: block;
     width: 100%;
     height: 1px;
-    background-color: $line;
-    position: absolute;
-    top: 26px;
-  }
 
+    background-color: $line;
+  }
 }
 
 .form__item-visited h3 {
-
   padding-bottom: 21px;
 
   @media (min-width: $tablet) {
+    position: absolute;
 
     width: 398px;
 
-    position: absolute;
-    background-color: $white;
     text-align: center;
 
+    background-color: $white;
   }
 }
 
@@ -543,7 +493,7 @@
   }
 }
 
-.form__visited-input+.form__visited-check::before {
+.form__visited-input + .form__visited-check::before {
   content: "";
   position: absolute;
   top: 0;
@@ -553,19 +503,17 @@
   height: 52px;
 
   background-color: $grayDark;
-
 }
 
-.form__visited-input:hover+.form__visited-check::before {
+.form__visited-input:hover + .form__visited-check::before {
   background-color: $border;
 }
 
-.form__visited-input:active+.form__visited-check::before {
+.form__visited-input:active + .form__visited-check::before {
   background-color: $radioActive;
-
 }
 
-.form__visited-input+.form__visited-check::after {
+.form__visited-input + .form__visited-check::after {
   content: "";
   position: absolute;
   top: 16px;
@@ -579,18 +527,17 @@
   background-position: center;
 }
 
-.form__visited-input:active+.form__visited-check::after {
+.form__visited-input:active + .form__visited-check::after {
   background-image: url("../img/tick-active.svg");
 }
 
-.form__visited-input:not(:checked)+.form__visited-check::after {
+.form__visited-input:not(:checked) + .form__visited-check::after {
   opacity: 0;
 }
 
-.form__visited-input:checked+.form__visited-check::after {
+.form__visited-input:checked + .form__visited-check::after {
   opacity: 1;
 }
-
 
 .form__item-emotion {
   border: none;
@@ -598,48 +545,49 @@
   @media (min-width: $tablet) {
     width: 100%;
     padding-top: 12px;
-    text-align: center;
 
+    text-align: center;
   }
 }
 
 .form__emotion-title {
   padding-bottom: 14px;
 
-  @media (min-width:$tablet) {
+  @media (min-width: $tablet) {
     position: relative;
 
-    padding-bottom: 80px;
     display: flex;
     justify-content: center;
+    padding-bottom: 80px;
   }
-
 }
 
 .form__emotion-title::before {
-
   @media (min-width: $tablet) {
     content: "";
+    position: absolute;
+    top: 9px;
+
     display: block;
     width: 100%;
     height: 1px;
+
     background-color: $line;
-    position: absolute;
-    top: 9px;
   }
 }
 
 .form__emotion-title h3 {
-
   @media (min-width: $tablet) {
     position: absolute;
+
     width: 400px;
+
     background-color: $white;
   }
 }
 
 .form__item-emotion textarea {
-  @include font-sans-bold(18px, 700, 26px);
+  @include font-sans(18px, 700, 26px);
 
   width: 100%;
   min-height: 160px;
@@ -657,10 +605,7 @@
   @media (min-width: $desktop) {
     padding: 20px 20px;
   }
-
 }
-
-
 
 .form__item-submit {
   padding-top: 22px;
@@ -671,11 +616,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     width: 100%;
     padding-top: 27px;
     padding-bottom: 30px;
-
   }
 
   @media (min-width: $desktop) {
@@ -683,8 +626,6 @@
     padding-bottom: 30px;
   }
 }
-
-
 
 .form__submit-btn {
   border: none;
@@ -694,7 +635,6 @@
     width: 324px;
     padding-top: 6px;
     padding-right: 13px;
-
   }
 
   @media (min-width: $desktop) {
@@ -702,7 +642,6 @@
     padding-right: 0;
   }
 }
-
 
 .form__submit-footnote {
   position: absolute;

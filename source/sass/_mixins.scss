@@ -2,44 +2,20 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
-@mixin font-sans($size: false, $weight: false, $lh: false) {
+@mixin font-sans($size, $weight, $lh) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $lh;
   font-family: "PT sans", "Helvetica", "Arial", sans-serif;
-
-  @if $size {
-    font-size: $size;
-  }
-
-  @if $weight {
-    font-weight: $weight;
-  }
-
-  @if $lh {
-    line-height: $lh;
-  }
-}
-
-@mixin font-sans-bold($size: false, $weight: false, $lh: false) {
-  font-family: "PT sans Bold", "Helvetica", "Arial", sans-serif;
-
-  @if $size {
-    font-size: $size;
-  }
-
-  @if $weight {
-    font-weight: $weight;
-  }
-
-  @if $lh {
-    line-height: $lh;
-  }
 }
 
 @mixin pseudo($display: block, $pos: absolute, $content: "") {
   content: $content;
-  display: $display;
   position: $pos;
+
+  display: $display;
 }

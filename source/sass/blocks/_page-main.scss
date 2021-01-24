@@ -1,9 +1,8 @@
-.page-main {}
-
 .page-main__banner {
   position: relative;
 
   height: 389px;
+
   background-color: $banner;
 
   @media (min-width: $tablet) {
@@ -23,7 +22,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     transform: translate(-50%, -50%);
-
 
     @media (min-width: $tablet) {
       top: 48%;
@@ -55,7 +53,6 @@
     background-position: 50% 100%;
 
     @media (min-width: $tablet) {
-
       bottom: -1px;
     }
   }

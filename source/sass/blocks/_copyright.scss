@@ -1,51 +1,40 @@
 .copyright {
   @include font-sans(14px, 400, 26px);
-  padding-top: 17px;
+
   display: flex;
-  align-items: center;
   justify-content: center;
-
-
-  @media (min-width: $tablet) {}
+  align-items: center;
+  padding-top: 17px;
 
   @media (min-width: $desktop) {
     margin: 0;
-
   }
+}
 
-  .copyright__text {
+.copyright__text {
+  margin: 0;
+  padding-top: 0;
 
-    padding-top: 0;
-    margin: 0;
-
-    @media (min-width: $tablet) {
-      padding-top: 10px;
-    }
-
-    @media (min-width:$desktop) {}
+  @media (min-width: $tablet) {
+    padding-top: 10px;
   }
+}
 
-  .copyright__link {
-    margin-top: 12px;
-    margin-left: 15px;
+.copyright__link {
+  margin-top: 12px;
+  margin-left: 15px;
 
-    @media (min-width: $tablet) {
-      margin-top: 0;
-      padding-top: 19px;
-      margin-left: 13px;
-    }
+  @media (min-width: $tablet) {
+    margin-top: 0;
+    margin-left: 13px;
+    padding-top: 19px;
   }
-
-
-
 }
 
 .copyright__link:hover svg path {
-
   fill: $blue;
 }
 
 .copyright__link:active svg path {
-
   fill: rgba($color: $black, $alpha: 0.3);
 }

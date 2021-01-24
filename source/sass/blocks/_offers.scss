@@ -10,11 +10,10 @@
   }
 
   h2 {
-    @include font-sans-bold (21px, 700, 26px);
+    @include font-sans(21px, 700, 26px);
 
     @media (min-width: $tablet) {
-      @include font-sans-bold (30px, 700, 26px);
-
+      @include font-sans(30px, 700, 26px);
     }
 
     @media (min-width: $tablet) {
@@ -23,38 +22,32 @@
   }
 
   p {
-    @include font-sans (14px, 400, 24px);
-    padding: 15px;
+    @include font-sans(14px, 400, 24px);
+
+    padding-bottom: 15px;
 
     @media (min-width: $tablet) {
-
       padding: 0 0 25px 0;
-
     }
 
     @media (min-width: $desktop) {
       width: 100%;
       padding-bottom: 29px;
-
     }
-
   }
 
   span {
     @media (min-width: $tablet) {
       display: block;
     }
-
   }
 
   .offers__btn {
     margin: 0 auto;
 
-
     @media (min-width: $tablet) {
       width: 458px;
       height: 58px;
     }
-
   }
 }
