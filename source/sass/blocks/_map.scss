@@ -1,12 +1,16 @@
 .map iframe {
   width: $phone;
   height: 350px;
+  background-image: url("../img/map-mobile.jpg");
+  background-size: contain;
 
   @media (min-width: $tablet) {
     min-width: $tablet;
+    background-image: url("../img/map-tablet.jpg");
   }
 
   @media (min-width: $desktop) {
     min-width: $desktop;
+    background-image: url("../img/map-desktop.jpg");
   }
 }

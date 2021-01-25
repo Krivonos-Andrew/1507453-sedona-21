@@ -11,7 +11,7 @@
 }
 
 .advantages__item {
-  position: relative;
+  // position: relative;
 
   min-width: $phone;
 
@@ -27,12 +27,17 @@
 
 .advantages__item-bridge {
   width: 100%;
+
 }
 
 .advantages__item-image {
   @media (min-width: $tablet) {
-    position: relative;
+    display: flex;
   }
+}
+
+.advantages__item-bridge .advantages__item-blue {
+  order: 2
 }
 
 .advantages__item-image img {
@@ -79,10 +84,7 @@
   background-color: $blue;
 
   @media (min-width: $tablet) {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
+
 
     width: 256px;
     padding: 40px 20px 20px 20px;
@@ -90,7 +92,7 @@
 
   @media (min-width: $desktop) {
     width: 400px;
-    padding: 45px 0 44px 0;
+    padding: 45px 0 35px 0;
   }
 }
 
